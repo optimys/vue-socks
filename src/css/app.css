@@ -1,6 +1,6 @@
 body {
     font-family: tahoma;
-    color: #282828;
+    color:#282828;
     margin: 0px;
 }
 
@@ -12,6 +12,8 @@ body {
 
 .product {
     display: flex;
+    flex-flow: wrap;
+    padding: 1rem;
 }
 
 img {
@@ -22,12 +24,13 @@ img {
 }
 
 .product-image {
-    flex-basis: 700px;
+    width: 80%;
 }
 
+.product-image,
 .product-info {
     margin-top: 10px;
-    flex-basis: 500px;
+    width: 50%;
 }
 
 .color-box {
@@ -51,6 +54,8 @@ button {
     height: 40px;
     width: 100px;
     font-size: 14px;
+    float: right;
+    margin: 0px 5px;
 }
 
 .disabledButton {
@@ -58,8 +63,9 @@ button {
 }
 
 .review-form {
-    width: 30%;
+    width: 400px;
     padding: 20px;
+    margin: 40px;
     border: 1px solid #d8d8d8;
 }
 
@@ -74,6 +80,16 @@ textarea {
     height: 60px;
 }
 
-.outOfStock {
-    text-decoration: line-through;
+.tabs {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.activeTab {
+    color: #16C0B0;
+    text-decoration: underline;
+}
+
+div ul span {
+    margin-left: 20px;
 }
